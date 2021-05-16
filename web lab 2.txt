@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>1802913143(LAB-1)</title>
+</head>
+<body>
+<center>
+<h1>Sahishnu Tiwari <br>Roll Number:1802913143<br>Section:IT(C)</h1>
+<img src="C:/Users/Sahishnu/Pictures/sahishnu.jpg" height="300px", width="250px",alt="Sahishnu Tiwari,"id="image" >
+</center>
+</body>

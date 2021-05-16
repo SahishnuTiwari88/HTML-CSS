@@ -1,0 +1,34 @@
+<html>
+<head><title>WT LAB</title>
+<link rel="stylesheet" type="text/css" href="jjj.css">
+</head>
+<body>
+<center>
+<h1>WEB TECHNOLOGY LAB 9</h1>
+<h2><marquee>Sahishnu Tiwari (1802913143)</marquee></h2>
+</center>
+<p id="demo"></p>
+<p id="demo1">Click the "Touch It!" button to see the Platform & UserAgent</p>
+<center><button onclick="sisile()">Touch It!</button></center>
+<script>
+var sar = "";
+sar += "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
+sar += "<p>Browser Name: " + navigator.appName + "</p>";
+sar += "<p>Browser Version: " + navigator.appVersion + "</p>";
+sar += "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>";
+sar += "<p>Browser Language: " + navigator.language + "</p>";
+sar += "<p>Browser Online: " + navigator.onLine + "</p>";
+sar += "<p>Product: " + navigator.product + "</p>";
+sar += "<p>Java is Enabled or not: " + navigator.javaEnabled() + "</p>";
+
+document.getElementById("demo").innerHTML=sar;
+
+function sisile(){
+var k= "Platform: " + navigator.platform +"<br>"+
+ "User-agent header: " + navigator.userAgent;
+document.getElementById("demo1").innerHTML=k;}
+//document.write("Browser Online is:")
+
+</script
+</body>
+</html>
