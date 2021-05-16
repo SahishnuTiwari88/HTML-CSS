@@ -1,0 +1,35 @@
+<html>
+<head>
+<script type="text/javascript" language="javascript">
+function InputException(msg)
+{
+ this.val = msg;
+ this.toString = function()
+ { return "Input Exception in = "+this.val;}
+}
+function AreLetters(msg)
+{
+ var input = msg;
+ var re = new RegExp("[^a-zA-Z]");
+ if(input.match(re))
+ {
+ oops = new InputException(input);
+ throw oops;
+ }
+ else{document.write("<br>"+input);}
+}
+function RunTest()
+{
+ var input = prompt("type something","");
+ try{AreLetters(input);}
+ catch(e){document.write("<br>exception occured and caught"+e.toString());}
+ document.write("<h1>Exception Handling</h1>");
+} 
+</script>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+RunTest();
+</script>
+</body>
+</html> 

@@ -1,0 +1,52 @@
+<html>
+<head>
+<body>
+<script language="javascript">
+var a="This is a Car is";
+var b="Luxurious";
+var c="Honda";
+var d=[a,b,c];
+for(i=0;i<=2;i++){
+document.writeln("<br>"+(i+1)+" string is=="+d[i]);}
+document.writeln("<br>length of 1st,2nd and 3rd strings
+are=="+a.length+","+b.length+","+c.length+" respectively");
+document.writeln("<br>character at 5th position of 1st string=="+a.charAt(5));
+document.writeln("<br>last index of \'is\' in 1st string=="+a.lastIndexOf("is"));
+document.writeln("<br>last index of \'is\' in 1st string after
+offset=="+a.lastIndexOf("is",13));
+document.writeln("<br>index of \'u\' in 2nd string=="+b.indexOf("u"));
+document.writeln("<br>index of \'u\' in 2nd string after offset=="+b.indexOf("u",13));
+document.writeln("<br>concatenation of 1st string and 2nd string=="+a.concat(b));
+document.writeln("<br>concatenation of 1st string ,2nd string and 3rd
+string=="+a.concat(b,c));
+document.write("<br>"+a.split(" "));
+document.write("<br>Upper case conversion of 1st string=="+a.toUpperCase());
+document.write("<br>lower case conversion of 3rd string=="+c.toLowerCase());
+document.write("<br>substring at 5th position of 1st string=="+a.substr(5));
+document.write("<br>substring at 5th position till 6 offset of 1st
+string=="+a.substr(5,6));
+document.write("<br>substring at 5th position till 11th position of 1st
+string=="+a.substring(6,11));
+var str="123+1";
+var x,y,i;
+document.write("<br>string=="+str);
+document.write("<br>evaluate function=="+eval(str)+"<br>");
+eval("x=10;y=10;document.writeln(x*100);"); 
+document.write("<br>eval inside document=="+eval(x*10));
+document.write("<br>ceil of 10.4 is=="+Math.ceil(10.4));
+document.write("<br>ceil of10.8 is=="+Math.ceil(10.8));
+document.write("<br>floor of 10.4 is=="+Math.floor(10.4));
+document.write("<br>round 10.5 is=="+Math.round(10.5));
+document.write("<br>maximum among 10,5,7 is=="+Math.max(10,5,7));
+document.write("<br>minimum of 10,5,7 is=="+Math.min(10,5,7));
+document.write("<br>power is=="+Math.pow(2,5));
+document.write("<br>square root=="+Math.sqrt(16));
+document.write("<br>absolute of -10=="+Math.abs(-10));
+for(i=0;i<10;i++)
+{document.write("<br>random"+i+"=="+Math.random());}
+document.write("<br>"+parseInt(5.6));
+document.write("<br>=="+isNaN(a));
+</script>
+</body>
+</head>
+</html> 

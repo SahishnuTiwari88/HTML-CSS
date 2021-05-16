@@ -1,0 +1,17 @@
+<html>
+<head>
+<script language="javascript">
+function openwin()
+{
+msg=window.open("","Displaywindow","height=500,width=1000,status=yes,toolbar=yes,directories=no,menubar=yes,location=yes");
+msg.document.write("<html><title>A new Window</title>");
+msg.document.write("<img src='muscle.jpg'><p><form><input type=button value=close onclick=self.close()></form></html>");
+}
+</script>
+</head>
+<body bgcolor="blue">
+<form>
+<input type=button value=click name=b1 onclick=openwin()>
+</form>
+</body>
+</html>

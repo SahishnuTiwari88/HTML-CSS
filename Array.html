@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>Array program</title>
+</head>
+<body>
+<script language"javascript">
+var days=["Monday","Tuesday","Wednesday","Thursday","Friday"];
+var day=new Array("Mon","tues","Wed","Thrus","fri");
+var mixed=["monday",34,13.78,"tuesday"];
+var mix=new Array("mon",1,12.1,"tues");
+document.write("<br><h3>Printing/Accessing the values in array using
+LOOP</h3>");
+for(i=0;i<mixed.length;i++)
+{
+document.write("<br>Array element "+i+" == "+mixed[i]);
+}
+document.write("<br><h3>Enhanced array </h3>");
+mixed[4]="Wednesday";
+mixed[10]="Friday";
+for(i=0;i<mixed.length;i++)
+{
+document.write("<br>Array element "+i+" == "+mixed[i]);
+}
+document.write("<br><h3>Searching an Element in an array </h3>");
+for(i=0;i<mixed.length;i++)
+{
+if(mixed[i]==34)
+{
+document.write("<br>Array element "+i+" == "+mixed[i]+" is found");
+break;
+}
+}
+document.write("<br><h3>Removing an Element from an array </h3>");
+var remove=prompt("Enter an element that to be removed from array");
+var temp=new Array(mixed.length-1);
+var count=0;
+for(i=0;i<mixed.length;i++)
+{
+if(mixed[i]!=remove)
+{
+temp[count]=mixed[i];
+count++;
+}
+}
+mixed=temp;
+document.write("<br><h3>New Array element after removing</h3>");
+for(i=0;i<mixed.length;i++)
+{
+document.write("<br>Element "+i+" == "+mixed[i]);
+}
+document.write("<br><h3>OBJECT BASED ARRAY FUNCTION</h3>");
+document.write("<br><b>Concatenation</b>");
+var newarray=days.concat(day,mix);
+for(i=0;i<newarray.length;i++)
+{
+document.write("<br>Element "+i+" == "+newarray[i]);
+}
+document.write("<br><br><b>Joining with some string</b>");
+document.write("<br>"+mix.join("-"));
+document.write("<br><br><b>POPing one element from array</b>");
+document.write("<br>"+mix.pop());
+document.write("<br>Array after pop is");
+document.write("<br>"+mix.join("-"));
+document.write("<br><br><b>PUSHing one or more element into an array</b>");
+mix.push(10,"suba",234.8);
+document.write("<br>Array after push is");
+document.write("<br>"+mix.join("-"));
+document.write("<br><br><b>Reversing an array</b>");
+document.write("<br>Array after reverse is");
+document.write("<br>"+mix.reverse());
+document.write("<br><br><b>Shifting in an array</b>");
+document.write("<br>Array after shifting one element is");
+document.write("<br>"+mix.shift());
+document.write("<br>New mix array is =="+mix.join("-"));
+document.write("<br><br><b>UNShifting in an array</b>");
+document.write("<br>Array after unshifting one element is");
+day.unshift("suba","satheesh");
+document.write("<br>New day array is =="+day.join("-"));
+document.write("<br><b>Extracting a part of array</b>");
+document.write("<br>"+mixed.slice(3));
+document.write("<br>"+mixed.slice(4,11));
+document.write("<br><b>Sorting an array</b>");
+document.write("<br>"+days.sort());
+var num=[1,4,2,3,11,33,3.4,99];
+document.write("<br><b>Sorting an number array</b>");
+//document.write("<br>"+num.sort(function(a,b){return a-b;}));
+document.write("<br>"+num.sort(nr));
+function nr(a,b)
+{
+return a-b;
+}
+document.write("<br><br><b>Splice-removing and adding element in an array at the
+same time</b>");
+day.splice(2,2,"Kaushik","Kaushika","Akshitha");
+document.write("<br>New day array is =="+day.join("--"));
+var str="123+5";
+x=20; 
+document.write("<br><br><b>Eval function :--</b></br>");
+document.write("<br>Value of str =="+eval(str)+"<br>");
+document.write("<br />" + eval(x+17));
+eval("x=10;y=20;document.write(\"<br>x*y == \"+x*y)");
+document.write("<br><h3>Global functions</h3>");
+document.write("<ol> <li>escape()<li>eval()<li>isFinite()<li>isNaN()");
+document.write("<li>Number()<li>parseFloat()<li>parseInt()<li>String()</ol>");
+</script>
+</body>
+</html> 

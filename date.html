@@ -1,0 +1,44 @@
+<html>
+<head>
+<title> Date Functions</title>
+<script type = "text/javascript">
+document.write("<h2 style=\"color:red;\">Date Constructor</h2>");
+var date1=new Date();
+document.write("<br><B style=\"color:red;\">Date1 Constructor without parameter==</b>"+date1.toGMTString());
+document.write("<br><B style=\"color:red;\">Date1 Constructor without parameter==</b>"+date1.toLocaleString());
+document.write("<br><B style=\"color:red;\">Date1 Constructor without parameter==</b>"+date1);
+var date2=new Date(999);
+document.write("<br><br><B style=\"color:red;\">Date2 Constructor with millisecond as parameter==</b>"+date2);
+var date22=new Date(1000000000);
+document.write("<br><B style=\"color:red;\">Date22 Constructor with millisecond as parameter==</b>"+date22);
+var date3=new Date("Mon 9 April 2001 14:15:30");
+document.write("<br><br><B style=\"color:red;\">Date3 Constructor with string as parameter==</b>"+date3);
+var date33=new Date("Mon 9 April 2001");
+document.write("<br><B style=\"color:red;\">Date33 Constructor with string as parameter==</b>"+date33);
+var date333=new Date("14:15:30");
+document.write("<br><B style=\"color:red;\">Date333 Constructor with string as parameter==</b>"+date333);
+var date4=new Date(2011, 3, 3,13, 12, 56);
+document.write("<br><br><B style=\"color:red;\">Date4 Constructor with string as parameter==</b>"+date4);
+document.write("<h2 style=\"color:purple;\">Date Methods for Retrieve Date values</h2>");
+document.write("<br><b style=\"color:purple;\">getDate() Method in date1==</b>"+date1.getDate());
+document.write("<br><b style=\"color:purple;\">getDay() Method in date1==</b>"+date1.getDay());
+document.write("<br><b style=\"color:purple;\">getFullYear() Method in date1==</b>"+date1.getFullYear());
+document.write("<br><b style=\"color:purple;\">getHours() Method in date3==</b>"+date3.getHours());
+document.write("<br><b style=\"color:purple;\">getMilliseconds() Method in date2==</b>"+date2.getMilliseconds());
+document.write("<br><b style=\"color:purple;\">getMilliseconds() Method in date22==</b>"+date22.getMilliseconds());
+document.write("<br><b style=\"color:purple;\">getMilliseconds() Method in date3==</b>"+date3.getMilliseconds());
+document.write("<br><b style=\"color:purple;\">getMinutes() Method in date3==</b>"+date3.getMinutes());
+document.write("<br><b style=\"color:purple;\">getSeconds() Method in date3==</b>"+date3.getSeconds());
+document.write("<br><b style=\"color:purple;\">getMonth() Method in date4==</b>"+date4.getMonth());
+document.write("<br><b style=\"color:purple;\">getTime() Method in date33==</b>"+date33.getTime());
+document.write("<br><b style=\"color:purple;\">getTime() Method in date333==</b>"+date333.getTime());
+document.write("<br><b style=\"color:purple;\">getTime() Method in date4==</b>"+date4.getTime());
+document.write("<br><b style=\"color:purple;\">getTime() Method in date1==</b>"+date1.getTime());
+document.write("<h2 style=\"color:purple;\">Date Methods for Setting values</h2>");
+date1.setDate(23);
+document.write("<br><b style=\"color:purple;\">setDate() Method in date1==</b>"+date1);
+date1.setFullYear(2012)
+document.write("<br><b style=\"color:purple;\">setFullYear() Method in date1==</b>"+date1);
+</script>
+</head>
+</html>
